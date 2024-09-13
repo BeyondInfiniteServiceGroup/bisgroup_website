@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}BIS Group{% endblock %}
+
+{% block content %}
+<div class="jumbotron mt-5">
+    <h1 class="display-4">Welcome to Beyond Infinite Service Group</h1>
+    <p class="lead">We build cutting-edge SaaS products to solve your most complex problems.</p>
+    <hr class="my-4">
+    <p>Learn more about our mission and vision below.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('main.about') }}" role="button">Learn more</a>
+</div>
+{% endblock %}
