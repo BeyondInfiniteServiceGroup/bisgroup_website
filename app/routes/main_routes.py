@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, url_for, redirect, request
 
 main = Blueprint('main', __name__)
 
@@ -17,3 +17,13 @@ def projects():
 @main.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@main.route('/submit_contact', methods=['POST'])
+def submit_contact():
+    # Placeholder for form handling
+    name = request.form.get('name')
+    subject = f"BIS Group website: Contact initiated by {name}."
+    email = request.form.get('email')
+    message = request.form.get('message')
+    print(f"Contact form submitted: {name}, {subject}, {email}, {message}")
+    return redirect(url_for('main.contact'))

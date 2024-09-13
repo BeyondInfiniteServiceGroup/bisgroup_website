@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2 mt-5">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please fill out the form below.</p>
+    <form method="POST" action="{{ url_for('main.submit_contact') }}">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</div>
+{% endblock %}
