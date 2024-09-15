@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #0D1117; 
+  color: #D0D7E2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Floating Navbar Styles */
+.navbar {
+  background-color: #0B1E36; /* Consistent dark navy */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand, .nav-link {
+  color: #D0D7E2 !important; /* Pale Silver */
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #00B0FF !important; /* Bright Neon Blue on hover */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+/* Content Spacing */
+.container {
+  padding: 75px 20px; /* Top padding to account for the fixed navbar */
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, #0B1E36, #1F4E79); /* Very Dark Navy to Deep Steel Blue */
+  color: #00B0FF; /* Bright Neon Blue */
+  padding: 50px 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #00B0FF; /* Bright Neon Blue */
+}
+
+p {
+  color: #D0D7E2; /* Pale Silver */
+}
+
+/* Form Styling */
+form {
+  width: 100%;
+  max-width: 600px; /* Slightly wider form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  background-color: #1F4E79; /* Deep Steel Blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Two-column layout for labels and fields */
+  grid-gap: 15px; /* Space between columns */
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align text to the right */
+  font-weight: bold;
+  color: #D0D7E2;
+  padding-right: 10px; /* Add a bit of space between label and field */
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  background-color: #0D1117; /* Charcoal Black */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #D0D7E2;
+  box-sizing: border-box;
+}
+
+/* Smaller Submit Button */
+input[type="submit"], input[type="button"] {
+  grid-column: span 2; /* Make the button span across both columns */
+  width: 30%; /* Smaller width for the button */
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 15px; /* Reduced padding */
+  margin: 10px auto; /* Centered button */
+  display: block; /* Block-level to center */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size */
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* Focus effects for inputs */
+input:focus, textarea:focus {
+  border-color: #00B0FF; /* Highlight the input border on focus */
+  outline: none;
+}
+
+/* Larger textarea */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  form {
+    grid-template-columns: 1fr; /* Single column form on small screens */
+  }
+  input[type="submit"] {
+    width: 100%; /* Full width button on mobile */
+  }
+}

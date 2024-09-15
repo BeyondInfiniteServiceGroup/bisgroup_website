@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Palette 1: Matrix Blue */
+
+/* body {
+  background-color: #F0F0F0;
+  color: #1E1E2F;
+} */
+
+.jumbotron {
+  background: linear-gradient(135deg, #007ACC, #00BFFF); /* Bright Azure Blue to Deep Sky Blue */
+  color: #FFFFFF; /* White */
+}
+
+h1, h2, h3, h4 {
+  color: #1E1E2F; /* Dark Navy Blue */
+}
+
+p {
+  color: #1E1E2F; /* Dark Navy Blue */
+}
+*/
+
+/* Palette 2: Futuristic Tech */
+
+body {
+  background-color: #EDF2F4; 
+  color: #FFFFFF; 
+}
+
+.jumbotron {
+  background: linear-gradient(135deg, #2B2D42, #8D99AE); /* Dark Charcoal Blue to Steel Blue */
+  color: #FFFFFF; /* White */
+}
+
+h1, h2, h3, h4 {
+  color: #2B2D42; /* Dark Charcoal Blue */
+}
+
+p {
+  color: #8D99AE; /* Steel Blue */
+}
+*/
+
+/* Palette 3: Data-Driven */
+/* 
+body {
+  background-color: #A8DADC;  
+  color: #F1FAEE; 
+}*/
+
+.jumbotron {
+  background: linear-gradient(135deg, #1D3557, #457B9D); /* Dark Blue to Light Slate Blue */
+  color: #F1FAEE; /* Mint Cream */
+}
+
+h1, h2, h3, h4 {
+  color: #1D3557; /* Dark Blue */
+}
+
+p {
+  color: #1D3557; /* Dark Blue */
+}
+*/
+
+/* Palette 4: Ocean Matrix */
+/* 
+body {
+  background-color: #E6F7FF; 
+  color: #FFFFFF; 
+} */
+
+.jumbotron {
+  background: linear-gradient(135deg, #003B5C, #0D99FF); /* Dark Sea Blue to Bright Ocean Blue */
+  color: #FFFFFF; /* White */
+}
+
+h1, h2, h3, h4 {
+  color: #003B5C; /* Dark Sea Blue */
+}
+
+p {
+  color: #003B5C; /* Dark Sea Blue */
+}
+*/
+
+/* Navbar Styles */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #adb5bd !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #4c6ef5;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #364fc7;
+}
+
+/* Footer (Optional for later) */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+  h1 {
+      font-size: 24px;
+  }
+}
+
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
