@@ -16,15 +16,24 @@
     <!-- ========== NAVIGATION BAR ========== -->
     <nav class="navbar" aria-label="Main navigation">
         <span class="nav-title">BIS Group</span>
-        <ul class="nav-links" role="menubar">
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links" role="menubar">
             <li role="none"><a role="menuitem" href="#home">Home</a></li>
             <li role="none"><a role="menuitem" href="#about">About</a></li>
             <li role="none"><a role="menuitem" href="#services">Services</a></li>
             <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
-        </button>
+        <!-- Controls group: place burger and theme toggle side-by-side -->
+        <div class="navbar-controls">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <button id="nav-toggle" class="nav-toggle-btn" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </button>
+        </div>
     </nav>
 
     <!-- ========== HERO SECTION ========== -->
